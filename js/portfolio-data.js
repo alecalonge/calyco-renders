@@ -1,5 +1,13 @@
 const portfolioItems = [
   {
+    brand: "viegener",
+    model: "001",
+    img: "images/portfolio-webp/viegener-001.webp",
+    hoverImg: "images/portfolio-webp/viegener-001-wire.webp",
+    width: 1920,
+    height: 1059,
+  },
+  {
     brand: "portfolio",
     model: "003",
     img: "images/portfolio-webp/003.webp",
@@ -221,6 +229,30 @@ const portfolioItems = [
     img: "images/portfolio-webp/aqualaf-15.webp",
     hoverImg: "images/portfolio-webp/aqualaf-15-wire.webp",
     width: 1536,
+    height: 1920,
+  },
+  {
+    brand: "fv",
+    model: "06",
+    img: "images/portfolio-webp/fv-06.webp",
+    hoverImg: "images/portfolio-webp/fv-06-wire.webp",
+    width: 1675,
+    height: 1920,
+  },
+  {
+    brand: "grb",
+    model: "02",
+    img: "images/portfolio-webp/grb-02.webp",
+    hoverImg: "images/portfolio-webp/grb-02-wire.webp",
+    width: 1920,
+    height: 1920,
+  },
+  {
+    brand: "grb",
+    model: "03",
+    img: "images/portfolio-webp/grb-03.webp",
+    hoverImg: "images/portfolio-webp/grb-03-wire.webp",
+    width: 1535,
     height: 1920,
   },
 ];

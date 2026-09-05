@@ -343,6 +343,71 @@
       font-weight: 600;
     }
 
+    .clients-section {
+      padding: 40px 72px 96px;
+      border-top: 1px solid var(--line);
+      background: #000;
+    }
+
+    .clients-title {
+      margin: 0 0 48px;
+      color: var(--text);
+      text-align: center;
+      font-size: clamp(1.3rem, 2.2vw, 1.9rem);
+      font-weight: 600;
+      letter-spacing: 0.04rem;
+      text-transform: lowercase;
+    }
+
+    .clients-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      align-items: center;
+      justify-items: center;
+      gap: 48px 32px;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    .clients-logo {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+    }
+
+    .clients-logo img {
+      height: 52px;
+      width: auto;
+      max-width: 100%;
+      object-fit: contain;
+      filter: brightness(0) invert(1);
+      opacity: 0.8;
+      transition: opacity 0.2s ease;
+    }
+
+    .clients-logo img.clients-logo__img--sm {
+      height: 36px;
+    }
+
+    .clients-logo img.clients-logo__img--xl {
+      height: 68px;
+    }
+
+    .clients-logo img.clients-logo__img--xxl {
+      height: 73px;
+    }
+
+    .clients-logo:hover img,
+    .clients-logo:focus-visible img {
+      opacity: 1;
+    }
+
+    .clients-logo:focus-visible {
+      outline: 1px solid rgba(255, 255, 255, 0.72);
+      outline-offset: 4px;
+    }
+
     @media (max-width: 760px) {
       .navbar {
         position: relative;
@@ -437,6 +502,35 @@
       .about-copy blockquote {
         max-width: 100%;
       }
+
+      .clients-section {
+        padding: 32px 24px 64px;
+      }
+
+      .clients-title {
+        margin-bottom: 36px;
+      }
+
+      .clients-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 36px 20px;
+      }
+
+      .clients-logo img {
+        height: 34px;
+      }
+
+      .clients-logo img.clients-logo__img--sm {
+        height: 24px;
+      }
+
+      .clients-logo img.clients-logo__img--xl {
+        height: 44px;
+      }
+
+      .clients-logo img.clients-logo__img--xxl {
+        height: 48px;
+      }
     }
   </style>
 </head>
@@ -444,7 +538,7 @@
   <header class="site-header">
     <nav class="navbar">
       <a href="index.html" class="logo" aria-label="Calyco Renders home">
-        <img src="images/logo-negro.png" alt="Calyco Renders" class="logo-img">
+        <img src="images/logo_calyco_negro.png" alt="Calyco Renders" class="logo-img">
         <span class="logo-text">calyco</span>
       </a>
 
@@ -508,6 +602,42 @@
 
           <p>Bienvenidos a Calyco.</p>
         </div>
+      </div>
+    </section>
+
+    <section class="clients-section" aria-label="Clientes que confiaron en nosotros">
+      <h2 class="clients-title">clientes que confían en nosotros</h2>
+      <div class="clients-grid">
+        <a class="clients-logo" href="https://andez.com.ar/" target="_blank" rel="noopener noreferrer" aria-label="Andez">
+          <img src="images/andez-logo.png" alt="Andez" loading="lazy">
+        </a>
+        <a class="clients-logo" href="https://aqualaf.com.ar/" target="_blank" rel="noopener noreferrer" aria-label="Aqualaf">
+          <img src="images/aqualaf-logo.png" alt="Aqualaf" loading="lazy">
+        </a>
+        <a class="clients-logo" href="https://productos.grb.es/" target="_blank" rel="noopener noreferrer" aria-label="GRB Mixers">
+          <img src="images/grb-logo.png" alt="GRB Mixers" loading="lazy">
+        </a>
+        <a class="clients-logo" href="https://www.griferiasmaier.com/" target="_blank" rel="noopener noreferrer" aria-label="Maier Griferías">
+          <img src="images/maier-logo.png" alt="Maier Griferías" loading="lazy" class="clients-logo__img--xl">
+        </a>
+        <a class="clients-logo" href="https://feliuboet.com/" target="_blank" rel="noopener noreferrer" aria-label="Feliu Boet">
+          <img src="images/boet-logo.png" alt="Feliu Boet" loading="lazy">
+        </a>
+        <a class="clients-logo" href="https://www.ferrum.com/" target="_blank" rel="noopener noreferrer" aria-label="Ferrum">
+          <img src="images/ferrum-logo.png" alt="Ferrum" loading="lazy" class="clients-logo__img--xxl">
+        </a>
+        <a class="clients-logo" href="https://www.franzviegener.com.ar/" target="_blank" rel="noopener noreferrer" aria-label="Franz Viegener">
+          <img src="images/franz-viegener-logo.png" alt="Franz Viegener" loading="lazy">
+        </a>
+        <a class="clients-logo" href="https://www.majosgriferia.com/" target="_blank" rel="noopener noreferrer" aria-label="Majos">
+          <img src="images/majos-logo.png" alt="Majos" loading="lazy">
+        </a>
+        <a class="clients-logo" href="https://www.fvsa.com/" target="_blank" rel="noopener noreferrer" aria-label="FV">
+          <img src="images/fv-logo.png" alt="FV" loading="lazy" class="clients-logo__img--xl">
+        </a>
+        <a class="clients-logo" href="https://www.peisa.com.ar/" target="_blank" rel="noopener noreferrer" aria-label="Peisa">
+          <img src="images/peisa-logo.png" alt="Peisa" loading="lazy" class="clients-logo__img--sm">
+        </a>
       </div>
     </section>
   </main>

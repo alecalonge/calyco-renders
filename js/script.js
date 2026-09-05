@@ -11,8 +11,13 @@ if (navToggle) {
 const siteHeader = document.querySelector('.site-header');
 
 function updateHeaderOnScroll() {
-  if (siteHeader) {
-    siteHeader.classList.toggle('is-scrolled', window.scrollY > 12);
+  if (!siteHeader) return;
+  // Umbrales distintos para activar/desactivar (histéresis): evita que un
+  // pequeño rebote de scroll cerca de un único punto haga titilar el header.
+  if (window.scrollY > 40) {
+    siteHeader.classList.add('is-scrolled');
+  } else if (window.scrollY < 16) {
+    siteHeader.classList.remove('is-scrolled');
   }
 }
 
