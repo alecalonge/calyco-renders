@@ -309,10 +309,11 @@ textarea {
 
 .portfolio-intro h1 {
   margin: 0;
-  font-size: clamp(1.8rem, 3vw, 3rem);
-  letter-spacing: 0.18rem;
+  color: var(--muted);
+  font-size: 0.8rem;
+  letter-spacing: 0.12rem;
   text-transform: uppercase;
-  font-weight: 600;
+  font-weight: normal;
 }
 
 .portfolio-intro p {

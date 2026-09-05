@@ -138,7 +138,7 @@ if (portfolioGrid && typeof portfolioItems !== 'undefined') {
     card.style.aspectRatio = `${item.width} / ${item.height}`;
 
     const mainImg = document.createElement('img');
-    mainImg.alt = '';
+    mainImg.alt = `Render 3D de ${item.brand} ${item.model} por Calyco Renders`;
     mainImg.width = item.width;
     mainImg.height = item.height;
     mainImg.loading = itemIndex < 4 ? 'eager' : 'lazy';
@@ -148,7 +148,7 @@ if (portfolioGrid && typeof portfolioItems !== 'undefined') {
     mainImg.decoding = 'async';
     mainImg.className = 'img-main';
     const wireImg = document.createElement('img');
-    wireImg.alt = '';
+    wireImg.alt = `Wireframe del render 3D de ${item.brand} ${item.model} por Calyco Renders`;
     wireImg.decoding = 'async';
     wireImg.className = 'img-hover';
 
@@ -325,9 +325,9 @@ function syncLightboxProject() {
   }
 
   lightboxRender.src = item.img;
-  lightboxRender.alt = '';
+  lightboxRender.alt = `Render 3D de ${item.brand} ${item.model} por Calyco Renders`;
   lightboxWire.src = item.hoverImg || item.img;
-  lightboxWire.alt = '';
+  lightboxWire.alt = `Wireframe del render 3D de ${item.brand} ${item.model} por Calyco Renders`;
   setLightboxState(false);
 }
 
